@@ -47,4 +47,4 @@ class RecordDialog(*ui_common.inherits_from_ui_file_with_name("record_dialog")):
         logger.info("Dialog closed (rejected/aborted): Record keyboard: {}, record mouse: {}, delay: {} s".format(
             self.get_record_keyboard(), self.get_record_mouse(), self.get_delay()
         ))
-        self.closure(False, self.get_record_keyboard(), self.get_record_mouse(), self.get_delay())
+        return
